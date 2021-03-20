@@ -2,7 +2,7 @@ import sys
 
 Stop = (str())
 
-while Stop !="n" or "N" or "no" or "No" or "NO" or "false" or "False" or "end" or "End" or "stop" or "Stop":
+while Stop !="n":
     
     Invoice_Date = (str(input("Enter Invoice Date / Bill Date ")))
     Program_Code = (str(input("Enter Program Code ")))
