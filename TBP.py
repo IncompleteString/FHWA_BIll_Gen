@@ -16,13 +16,13 @@ while Stop !="n":
     RPD = (str(input("Enter Requested Payment Date ")))
 
 
-    print(Invoice_Date,"|",Program_Code,"|",Recipient_ID,"|",Activity_Code,"|",FPN,"|",Object_Class,"|",Demo_ID,"||",Transaction_Type,"|",Amount,"|",RPD,sep='',end ='\n')
+    print(Invoice_Date,"|",Program_Code,"|",Recipient_ID,"|",Activity_Code,"|",FPN,"|",Object_Class,"|",Demo_ID,"|",Transaction_Type,"|",Amount,"|",RPD,sep='',end ='\n')
     
     original_stdout = sys.stdout    
  
     with open('FHWA_Bill.txt', 'a+') as f:
         sys.stdout = f 
-        print(Invoice_Date,"|",Program_Code,"|",Recipient_ID,"|",Activity_Code,"|",FPN,"|",Object_Class,"|",Demo_ID,"||",Transaction_Type,"|",Amount,"|",RPD,sep='',end ='\n')
+        print(Invoice_Date,"|",Program_Code,"|",Recipient_ID,"|",Activity_Code,"|",FPN,"|",Object_Class,"|",Demo_ID,"|",Transaction_Type,"|",Amount,"|",RPD,sep='',end ='\n')
         # Reset the standard output
         sys.stdout = original_stdout 
         
